@@ -1,6 +1,5 @@
 def presses(str):
-    # Your Code Here!
-
+    pass
 
 
 print presses("V8") # 7
