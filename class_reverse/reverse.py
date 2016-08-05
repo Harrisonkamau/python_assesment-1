@@ -11,7 +11,7 @@
 # Solution:
 class InputOutString(object):
     def __init__(self, string):  # create __init__ method
-        string = string
+        self.string = string
 
     # create get_string() method
     def get_string(self):
@@ -23,7 +23,7 @@ class InputOutString(object):
         return string.upper()
 
 
-willie = InputOutString("willie")
+willie = InputOutString("willie")  # instance of a class
 print willie.get_string()
 print willie.print_string()
 
