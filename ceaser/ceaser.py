@@ -12,11 +12,12 @@
 # create a key for encrypting && decrypting
 key = 'abcdefghijklmnopqrstuvwxyz'
 
-# encrypt text first
-def encrypt(plaintext, n):
+
+# create a cipher using the set key
+def CaesarCipher(string, n):
     result = ''
     # make sure that all letters are in lower case
-    for letter in plaintext.lower():
+    for letter in string.lower():
         try:
             temp = (key.index(letter)+n) % 26
             result += key[temp]
@@ -26,13 +27,6 @@ def encrypt(plaintext, n):
     return result.lower()
 
 
-
-
-def CaesarCipher(string, num):
-
-
-
-
-
+print CaesarCipher("Hello world", 2)
 
 print "Cipertext:", CaesarCipher("A Crazy fool Z", 1)
