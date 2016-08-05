@@ -9,8 +9,29 @@
 # happy coding :-)
 
 
+# create a key for encrypting && decrypting
+key = 'abcdefghijklmnopqrstuvwxyz'
+
+# encrypt text first
+def encrypt(plaintext, n):
+    result = ''
+    # make sure that all letters are in lower case
+    for letter in plaintext.lower():
+        try:
+            temp = (key.index(letter)+n) % 26
+            result += key[temp]
+        except ValueError:
+            result += letter
+
+    return result.lower()
+
+
+
+
 def CaesarCipher(string, num):
-    # Your code goes here
+
+
+
 
 
 
