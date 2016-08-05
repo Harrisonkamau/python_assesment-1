@@ -13,9 +13,20 @@ class InputOutString(object):
     def __init__(self, string):  # create __init__ method
         string = string
 
+    # create get_string() method
     def get_string(self):
         input_str = raw_input("Enter a word: ")
         return input_str
+
+    def print_string(self):
+        string = ''
+        string.get_string()
+        return string
+
+
+
+
+
 
 
 
