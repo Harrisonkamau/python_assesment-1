@@ -7,6 +7,13 @@
 # Hints:
 # Use __init__ method to construct some parameters
 
+
 # Solution:
 class InputOutString(object):
-    # code goes here
+    def __init__(self, string):  # create __init__ method
+        string = string
+
+
+
+
+
