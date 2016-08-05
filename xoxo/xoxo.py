@@ -7,9 +7,9 @@
 
 
 def xoxo(string):
-    count_o = string.count('o')
-    cont_x = string.count('x')
-    if cont_x == count_o:
+    count_o = string.count('o')  # count the number of o's
+    cont_x = string.count('x')  # count the number of x's
+    if cont_x == count_o:  # if the number of x's equals the number of o's, return True, else False
         return True
     return False
 
