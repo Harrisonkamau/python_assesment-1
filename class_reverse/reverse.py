@@ -19,11 +19,13 @@ class InputOutString(object):
         return input_str
 
     def print_string(self):
-        string = ''
-        string.get_string()
-        return string
+        string = self.get_string()
+        return string.upper()
 
 
+willie = InputOutString("willie")
+print willie.get_string()
+print willie.print_string()
 
 
 
