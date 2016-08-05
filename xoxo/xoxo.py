@@ -6,13 +6,18 @@
 # For example: if str is "xooxxxxooxo" then the output should return false because there are 6 x's and 5 o's.
 
 
-def Xoxo(str):
-    # code goes here
+def xoxo(string):
+    count_o = string.count('o')
+    cont_x = string.count('x')
+    if cont_x == count_o:
+        return True
+    return False
+
+
+print xoxo('xxxxxooooo')
+print xoxo('xxooo')
+print xoxo('xxooxxooxxxxo')
 
 
 
 
-
-
-# keep the function call
-print Xoxo("have fun..xoxo")
